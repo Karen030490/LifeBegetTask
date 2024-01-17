@@ -24,8 +24,7 @@ class CheckProduct extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
-    {
+    public function handle(){
         $service = new ExcelReader();
         $service->readProductsFromXslx();
     }
